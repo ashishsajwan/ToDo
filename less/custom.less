@@ -1,0 +1,129 @@
+@import "dracula.less";
+@import "utility.less";
+@colorBlue :#2A80B9;
+#app-header-container, #app-body-container, #app-footer-container {
+  font-size: 14px;
+  border-bottom: 2px solid #d7d7d7;
+}
+
+#app-footer-container {
+  border: none;
+  margin: 10px 0;
+}
+
+.appHeader {
+  margin: 10px 0;
+  #logo {
+    max-width: 80px
+  }
+  #tagline {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+}
+
+#pending-task-count {
+  margin: 15px 0;
+  font-size: 1.5em;
+  color: #2a80b9;
+}
+
+#input-container {
+  margin: 10px 0;
+  label {
+    font-size: 2em;
+    font-weight: lighter;
+    color: #2a80b9;
+    color: @colorBlue;
+  }
+  #todo-input {
+    margin: 0 10px;
+    padding: 0 10px;
+    color: #666666;
+    &::-webkit-input-placeholder {
+      color: @colorBlue;
+    }
+    &::-moz-placeholder {
+      color: @colorBlue;
+    }
+  }
+}
+
+#todo-task-container {
+  min-height: 600px;
+  .todoTask {
+    &:hover {
+      .glyphicon {
+        display: inline-block;
+        float: right;
+      }
+    }
+    div {
+      padding: 15px;
+      font-size: 1.5em;
+      color: white;
+      margin: 0 0 10px 0;
+      .glyphicon {
+        display: none;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+  .markingInComplete {
+    div {
+      padding: 15px;
+      font-size: 1.5em;
+      color: grey;
+      margin: 0 0 10px 0;
+      background-color: #d7d7d7;
+      .glyphicon {
+        display: none;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#done-task-container {
+  background-color: #E8e8e8;
+  border-left: 2px solid #d7d7d7;
+  #done-task-list {
+    min-height: 600px;
+  }
+  .title {
+    margin: 10px 0;
+    color: #27AE61;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  #completed-task-count {
+    font-size: 0.5em;
+    display:inline-block;
+  }
+  .taskComplete {
+    padding: 15px;
+    background-color: white;
+    font-size: 1.5em;
+    color: @colorBlue;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .markingComplete {
+    width: 100%;
+    display: inline-block;
+    padding: 15px;
+    background-color: white;
+    font-size: 1.5em;
+    color: @colorBlue;
+    margin: 0 0 10px 0;
+    div {
+      background-color: #FFFFFF !important;
+      .glyphicon {
+        display: none;
+      }
+    }
+  }
+}

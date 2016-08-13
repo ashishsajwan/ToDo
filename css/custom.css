@@ -1,0 +1,226 @@
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-mirror div {
+  padding: 15px;
+  font-size: 1.5em;
+  color: white;
+}
+.gu-mirror div .glyphicon {
+  display: none;
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+div.centroid {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  /* vertical centering for legacy, horizontal centering for modern */
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* modern Flexbox only */
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* legacy Flexbox only */
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+}
+div.align-middle,
+div.align-top {
+  white-space: nowrap;
+}
+div.align-middle div.aligned-child {
+  vertical-align: middle;
+  display: inline-block;
+}
+div.align-top div.aligned-child {
+  vertical-align: top;
+  display: inline-block;
+}
+div.aligned-child {
+  white-space: initial;
+  /* need to reset it back to initial */
+}
+/* handy classes*/
+.no-padding-left {
+  padding-left: 0 !important;
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#app-header-container,
+#app-body-container,
+#app-footer-container {
+  font-size: 14px;
+  border-bottom: 2px solid #d7d7d7;
+}
+#app-footer-container {
+  border: none;
+  margin: 10px 0;
+}
+.appHeader {
+  margin: 10px 0;
+}
+.appHeader #logo {
+  max-width: 80px;
+}
+.appHeader #tagline {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+#pending-task-count {
+  margin: 15px 0;
+  font-size: 1.5em;
+  color: #2a80b9;
+}
+#input-container {
+  margin: 10px 0;
+}
+#input-container label {
+  font-size: 2em;
+  font-weight: lighter;
+  color: #2a80b9;
+}
+#input-container #todo-input {
+  margin: 0 10px;
+  padding: 0 10px;
+  color: #666666;
+}
+#input-container #todo-input::-webkit-input-placeholder {
+  color: #2a80b9;
+}
+#input-container #todo-input::-moz-placeholder {
+  color: #2a80b9;
+}
+#todo-task-container {
+  min-height: 600px;
+}
+#todo-task-container .todoTask:hover .glyphicon {
+  display: inline-block;
+  float: right;
+}
+#todo-task-container .todoTask div {
+  padding: 15px;
+  font-size: 1.5em;
+  color: white;
+  margin: 0 0 10px 0;
+}
+#todo-task-container .todoTask div .glyphicon {
+  display: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+#todo-task-container .markingInComplete div {
+  padding: 15px;
+  font-size: 1.5em;
+  color: grey;
+  margin: 0 0 10px 0;
+  background-color: #d7d7d7;
+}
+#todo-task-container .markingInComplete div .glyphicon {
+  display: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+#done-task-container {
+  background-color: #E8e8e8;
+  border-left: 2px solid #d7d7d7;
+}
+#done-task-container #done-task-list {
+  min-height: 600px;
+}
+#done-task-container .title {
+  margin: 10px 0;
+  color: #27AE61;
+  font-size: 2em;
+  font-weight: lighter;
+}
+#done-task-container #completed-task-count {
+  font-size: 0.5em;
+  display: inline-block;
+}
+#done-task-container .taskComplete {
+  padding: 15px;
+  background-color: white;
+  font-size: 1.5em;
+  color: #2a80b9;
+  margin: 0 0 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+#done-task-container .markingComplete {
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  background-color: white;
+  font-size: 1.5em;
+  color: #2a80b9;
+  margin: 0 0 10px 0;
+}
+#done-task-container .markingComplete div {
+  background-color: #FFFFFF !important;
+}
+#done-task-container .markingComplete div .glyphicon {
+  display: none;
+}
